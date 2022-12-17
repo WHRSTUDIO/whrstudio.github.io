@@ -247,33 +247,6 @@
 
 
 
-<script type="text/javascript">
-	jQuery(document).click(function(e) {
-		var size = 100//自定义大小
-		jQuery('body').append("<div class='dianjixiaoguo'>")//创建一个div
-		jQuery('.dianjixiaoguo').css({//设置初始样式
-			position: 'fixed',//使用相对于浏览器进行定位(必须)
-			left: e.clientX,
-			top: e.clientY,
-			borderRadius: size + 'px',
-			border: '1px solid black',
-		}).stop().animate({//设置最终样式，用动画来表现(当点击过快时需要用stop来终止上一次未进行完的动画)
-			width: size,
-			height: size,
-			left: e.clientX - size / 2,
-			top: e.clientY - size / 2,
-			opacity: '0'
-		}, function() {//动画运行完毕后删除此div
-			jQuery('body .dianjixiaoguo').remove()
-		})
- 
-	})
-</script>
-
-
-
-
-
 
                               
    <center><img src="https://apis.jxcxin.cn/api/ip?title=WHR STUDIO"></center></br>
